@@ -3,16 +3,28 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>gaunernst's Photography</title>
+    <title>gaunernst's Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="image"><img src="assets/DSC8003.jpg"></div>
-    <div class="image"><img src="assets/IMG_1555 (2).jpg"></div>
-    <div class="image"><img src="assets/_DSC7744 1.jpg"></div>
-    <div class="image"><img src="assets/final.jpg"></div>
-    <div class="image"><img src="assets/malevich.jpg"></div>
+    <header>
+        <h1>This is a gallery</h1>
+    </header>
+    <section id="gallery">
+        <img class="item portrait"  src="assets/DSC8003.jpg"      onclick="show(this)"></img>
+        <img class="item landscape" src="assets/IMG_1555 (2).jpg" onclick="show(this)"></img>
+        <img class="item square"    src="assets/_DSC7744 1.jpg"   onclick="show(this)"></img>
+        <img class="item landscape" src="assets/final.jpg"        onclick="show(this)"></img>
+        <img class="item landscape" src="assets/malevich.jpg"     onclick="show(this)"></img>
+    </section>
+    <footer>
+
+    </footer>
+    <section id="lightbox" class="hidden">
+        <img id="viewer"></img>
+        <button onclick="exit()">Exit</button>
+    </section>
 </body>
 </html>
