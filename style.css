@@ -25,6 +25,7 @@ a:hover { color: var(--color-3); }
 
 .item { filter: grayscale(1); display: block;  object-fit: cover; width: 100%; height: 100%; transition: 0.5s ease-in-out; }
 .item:hover { filter: none; }
+.item:active { filter: none; }
 
 @media only screen and (min-width: 600px) {
   .portrait  { grid-column: span 3; grid-row: span 4; }
@@ -34,7 +35,6 @@ a:hover { color: var(--color-3); }
 }
 
 @media only screen and (max-width: 600px) {
-  .item { filter: none; }
   .portrait  { grid-column: span 12; grid-row: span 16; }
   .square    { grid-column: span 12; grid-row: span 12; }
   .landscape { grid-column: span 12; grid-row: span 6; }
